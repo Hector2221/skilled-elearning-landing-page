@@ -1,0 +1,182 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-plus: 'Plus Jakarta Sans', sans-serif;
+    --dark: #13183F;
+    --dark-light: #666CA3;
+    --gray: #83869A;
+    --pink: #F74780;
+    --light-pink: #FFA7C3;
+    --white: #FFF;
+}
+body{
+    font-family: var(--font-plus);
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+.content{
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+}
+h2{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 71px;
+    color: var(--dark);
+    margin-bottom: 29px;
+}
+p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray);
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+}
+a:hover{
+    color: var(--light-pink);
+}
+h4{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--dark);
+}
+/* HEADER */
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+
+
+.info-courses{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 100px 0 230px 0;
+}
+
+.information{
+    padding-right: 90px;
+    
+}
+.information p{
+    margin-bottom: 40px;
+}
+.img-course{
+    background: url(../img/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+    right: -0;
+    top: -180px;
+    width: 900px;
+    height: 900px;
+}
+
+
+/* card-courses */
+.card-courses{
+    display: grid;
+    grid-template-columns: repeat(3,min-content);
+    row-gap: 80px ;
+    column-gap: 30px;
+}
+.card{
+    width: 350px;
+    height: 322px;
+    left: 925px;
+    top: 861px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+    padding: 0 32px;
+}
+.card:nth-child(1){
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--white);
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    padding: 44px 32px 0px 32px;
+}
+
+.describe-card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-courses .card:nth-child(3) a, .card-courses .card:nth-child(4) a{
+    margin-top: 30px;
+}
+
+.img-skill{
+    margin-top: -30px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 100px;
+    padding: 30px 0px;
+    background: var(--dark);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+
+
+/* buttons */
+button{
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white);
+}
+button:hover{
+    cursor: pointer;
+}
+
+.btn-dark{
+    background: var(--dark);
+    border-radius: 28px;
+}
+.btn-dark:hover{
+    background: var(--dark-light);
+}
+
+.btn-pink{
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    padding: 16px 26px;
+}
+.btn-pink:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.btn-purple{
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    border-radius: 28px;
+}
+.btn-purple:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
